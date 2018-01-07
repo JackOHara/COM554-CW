@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html> 
+  <head>		
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>COM554 Assignments Access Page</title> 
+
+
+    <!-- This web page should be located as in the example address below (only the student id number will be different)  -->
+    <!-- //scm.ulster.ac.uk/~B00123456/workspace/COM554/access.html                               -->
+    <!-- The 4 buttons should link to specific files in the 2 subdirectories - see below:          -->
+    <!-- //scm.ulster.ac.uk/~B00123456/workspace/COM554/assignment_1/jquery_demos.html            -->
+    <!-- //scm.ulster.ac.uk/~B00123456/workspace/COM554/assignment_1/technical_log.pdf                      -->
+    <!-- //scm.ulster.ac.uk/~B00123456/workspace/COM554/assignment_2/news_guide.html                    -->
+    <!-- //scm.ulster.ac.uk/~B00123456/workspace/COM554/assignment_2/evaluation_report.pdf        -->
+    <!-- //scm.ulster.ac.uk/~B00123456/workspace/COM554/assignment_2/video.mov        -->
+
+    <!-- Note: the last 4 links are absolute links, provided for clarity                           -->
+    <!-- In the edited version of this file, the links should be specified in relative form, e.g.  -->
+    <!--          assignment_1/jquery_demos.html                                                   -->
+
+
+    <!-- Google is one of a number of Content Delivery Networks (CDN) that provide the jQuery library online -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="date_time.js"></script>
+    <style type="text/css">
+
+      body {background-color: rgb(248, 248, 255);}
+
+      #liveExample {
+        padding: 1em;
+        background-color: #EED;
+        border: 1px solid #CCC;
+        max-width: 400px;
+        margin: auto;
+        margin-top: 3em;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, .3);
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, .3);
+      }
+
+      * {
+        color: #000077;
+        font-family: arial;
+        text-decoration: none;
+        line-height: 1.6em;
+        margin: 0;
+      }
+
+      div {
+        display: block;
+      }
+
+      #browserInfo {
+        position: relative; 
+        top: 1em;
+        font-size: x-small;
+      }
+
+      .highlight {
+        font-weight: bold;
+      }
+
+    </style>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#browserInfo').append("<p class='highlight'>Browser details detected at " + getClockTime() + "</p>");
+        $('#browserInfo').append("<span>Platform: "  + navigator.platform + ".</span>");
+        if (navigator.cookieEnabled)
+          {
+            $('#browserInfo').append("<span> Cookies:enabled.</span>");
+          }
+          else
+          {
+            $('#browserInfo').append("<span> Cookies: not enabled.</span>");
+          }
+      });     
+    </script>
+
+  </head>
+  <body>
+    <div id="liveExample">
+      <div>
+        <h3>COM554 Assignments Access Page</h3>
+        <h2>Jack O'Hara</h2> <!-- Change to your name      -->
+        <h3 >B00659273</h3>  <!-- Change to your id number -->
+      </div>
+
+      <!-- Links to university web sites and documents should be changed to point to assignment work -->
+
+      <form>
+        <fieldset>
+          <legend>Assignment 1</legend>
+          <a href="assignment_1/jquery_demos.html" target="_blank"><button  type="button" >Live web site</button></a>
+          <a href="assignment_1/technical_log.pdf" target="_blank"><button  type="button" >technical_log.pdf</button></a>
+          <a href="assignment_1/video.mov" target="_blank"><button  type="button" >Screencast</button></a>
+        </fieldset>
+        <fieldset>
+          <legend>Assignment 2</legend>
+          <a href="assignment_2/news_site.html" target="_blank"><button  type="button" >Live web site</button></a>
+          <a href="assignment_2/evaluation_report.pdf" target="_blank">
+            <button  type="button" >evaluation_report.pdf</button></a>
+            <a href="assignment_2/video.mp4" target="_blank"><button  type="button" >Screencast</button></a>
+        </fieldset>
+      </form>
+      <div>
+        <div id="browserInfo"></div> 
+      </div>   		    	
+    </div>
+  </body>
+</html>

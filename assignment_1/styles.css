@@ -1,0 +1,245 @@
+/* Font imported from google fonts. */
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body {
+    max-width: 1000px;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    background: #F7F7F7;
+}
+
+
+/*Navbar and dropdown*/
+
+.navbar {
+    overflow: hidden;
+    margin: auto;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 15px 40px 15px 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: 22px;
+}
+
+.navbar a:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+.navbar .dropdown {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.navbar .dropdown .dropdown-content {
+    display: none;
+    position: fixed;
+    min-width: 160px;
+    overflow: auto;
+    background-color: #F7F7F7;
+    border: 2px solid darkgray;
+    border-radius: 1px;
+}
+
+.navbar .dropdown .dropdown-content a {
+    display: block;
+    padding: 5px 16px;
+}
+
+
+/* Section allignment and font */
+
+section {
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    background-color: white;
+}
+
+p,
+ul li,
+ol li,
+h1,
+h2,
+h3,
+img {
+    margin-right: 40px;
+    margin-left: 40px;
+    line-height: 150%
+}
+
+section p.img-caption {
+    text-align: center;
+    font-size: 14px;
+}
+
+section h1 {
+    padding-top: 10px;
+    text-align: center;
+    color: #2C6FAD;
+    font-size: 28px;
+}
+
+section h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    color: #474747;
+}
+
+section p {
+    color: #474747;
+}
+
+
+/* Horizontal line */
+
+hr {
+    margin-top: 30px;
+}
+
+
+/* Table */
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+td,
+th {
+    padding: 8px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+/* Canvas */
+
+canvas {
+    border: 1px solid #000000;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+/* Footer */
+
+footer p {
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #474747;
+}
+
+
+/* Buttons, used for video control */
+
+.btn-group {
+    text-align: center
+}
+
+.btn-group button {
+    padding: 10px 24px;
+    align-items: center;
+    cursor: pointer;
+    background-color: lightgray;
+    border: 1px solid darkgray;
+    color: black;
+}
+
+.btn-group button:hover {
+    background-color: darkgray;
+}
+
+
+/* Select box */
+
+.select-box select {
+    display: block;
+    height: 34px;
+    width: 268px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: transparent;
+    border: 1px black;
+    font-size: 14px;
+}
+
+.select-box.box select {
+    height: 34px;
+    width: 268px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+/* Accordion */
+
+button.accordion {
+    padding: 18px 50px;
+    width: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    background-color: #eee;
+}
+
+button.accordion.active,
+button.accordion:hover {
+    background-color: #ddd;
+}
+
+.accordianpanel {
+    display: none;
+}
+
+
+/* Element IDs */
+
+#Home {
+    /*Used to make it display on load? make this javascript?*/
+    display: block;
+}
+
+#EthereumVideo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#ToolTip {
+    position: absolute;
+    padding: 2px 5px;
+    border: 1px solid #333;
+    background: #f7f5d1;
+    color: #333;
+}
+
+#EthereumPrice {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: darkgreen;
+}

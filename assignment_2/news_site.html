@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>News!</title>
+    <link rel="icon" href='images/news-logo.jpg'>
+
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <!-- CSS link -->
+    <link href="style.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Logo -->
+    <div class="text-center">
+        <img src='images/news-logo.jpg' height='250px' class="rounded" alt="...">
+    </div>
+
+    <!-- Navbar section -->
+    <div class='row'>
+
+        <div class='col-10 offset-1'>
+            <div class='text-center'>
+                <!-- Bootstrap navbar -->
+                <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <!-- Nav items -->
+                        <li class="nav-item active">
+                            <a class="section-btn nav-link" value="home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="section-btn nav-link" value="business">Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="section-btn nav-link" value="culture">Culture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="section-btn nav-link" value="environment">Environment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="section-btn nav-link" value="media">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="section-btn nav-link" value="lifeandstyle">Lifestyle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="section-btn nav-link" value="sport">Sport</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="section-btn nav-link" value="technology">Technology</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="section-btn nav-link" value="weather">Weather</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="section-btn nav-link" value="film">Film</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="section-btn nav-link" value="travel">Travel</a>
+                        </li>
+
+                    </ul>
+                    <!-- Search text box, sort box and search button -->
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" id="searchBox" placeholder="Search">
+                        <select class="form-control mr-sm-2" id="searchOrder">
+                                <option value='relevance'>Relevance</option>
+                                <option value='newest'>Newest</option>
+                                <option value='oldest'>Oldest</option>
+                            </select>
+                        <button class="btn btn-outline-danger my-2 my-sm-0" id="searchButton" type="submit">Search</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Search help section -->
+    <div class='row'>
+
+        <div class='col-10 offset-1'>
+            <div class='col-6 offset-6'>
+                <!-- Bootstrap card containing help info -->
+                <div id="searchHelp" class="card">
+                    <div class="card-header">
+                        Search Help
+                    </div>
+                    <div class="card-block">
+                        <blockquote class="card-blockquote">
+                            <p>
+                                <ul>
+                                    <li>Enter a keyword to search for in the above text box</li>
+                                    <li>Click the search button to search</li>
+                                    <li>You can order your search by selecting an option in the dropdown box beside the search
+                                        button
+                                    </li>
+                                </ul>
+                                Advanced Search:
+                                <ul>
+                                    <li>Supports AND, OR and NOT operators</li>
+                                    <li>Supports exact phrase queries </li>
+                                </ul>
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Article Listings and Most Popular section -->
+    <div class="row" id="webContent">
+
+        <div class='col-10 offset-1' id='articleListings'>
+            <div class='text-center'>
+                <div class='row'>
+
+                    <div class="col-8">
+                        <!-- Article Listings title and content section -->
+                        <h1 id='recentArticlesTitle'>Recent Stories</h1>
+                        <hr>
+                        <div class="row text-left" id="recentArticlesListings">
+                        </div>
+                    </div>
+
+                    <!-- Popular listings section -->
+                    <div class="col-4" id="popularTable">
+                        <h1 id='mostPopularTitle'>Most Popular</h1>
+                        <div class="row text-left" id="popularListings">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article Content section -->
+    <div class="row">
+        <div class='col-6 offset-3'>
+            <div id='articleContent'></div>
+
+        </div>
+    </div>
+
+    <!-- Search Results section -->
+    <div class="row">
+        <div class='col-6 offset-3'>
+            <div id='searchResults'>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section-->
+    <footer>
+        <div class="container">
+            <p>News Site by Jack O'Hara. This website uses the Guardian API. </p>
+        </div>
+    </footer>
+
+    <!-- Jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- News javacript link -->
+    <script src="script.min.js"></script>
+    <!-- bootstrap v4 required js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

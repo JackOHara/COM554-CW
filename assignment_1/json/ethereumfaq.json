@@ -1,0 +1,19 @@
+{
+    "Beginner Questions": {
+        "Whats all this stuff about ethereum and ether being different?": "An important point about this project is that we see ethereum as being a platform first. If you approach it from the perspective of ether being a coin, with all the smart contract stuff being just bells and whistles on top to make the coin more valuable, you are going to have a hard time understanding this community; it's really all about the applications first and foremost, and ether is there simply as a token to facilitate payment of transaction fees and incentivize mining (and of course it can also be used as a default medium for inter-application payments and security deposits). To get back to your question, Ethereum is the name of the platform, and ether is the base token.",
+        "Why is Ethereum rising so quickly?": "News, and more news of Increasing Ethereum Adoption. Applications being built on the platform. Because the dark and demonic forces that control such things have looked kindly upon it, at least for the time being.",
+        "Where is the value in ethereum derived from?": "Ethereum is useful primarily because of its very high degree of generality, allowing users to build a very wide array of applications directly on the blockchain, ranging from currencies to various kinds of financial contracts to domain name registries, identity registries and certificate authority systems and even voting and governance applications. The protocol includes a built-in programming language that essentially allows you to specify whatever rules for a smart contract that you want, and the blockchain executes them for you."
+
+    },
+        "Technical Questions": {
+        "Does Ethereum have a blocksize limit?": "No. The blocksize is adjusted dynamically.",
+        "What are the block times?": "On average 16 seconds.",
+        "Are Ethereum & Bitcoin Hashrates comparable?": "Not directly since they use very different mining algorithms. Ethereums uses an ASIC resistant algorithm named EThash."
+    },
+        "Investor Questions": {
+        "What is the Inflation?": "proof of work (current) ~15% in the first year, capping at 90M",
+        "Is the Ether supply infinite?": "The roadmap originally intended for 18M more ether to be mined, with a cap of 90M. Followed by a switch to Proof of Stake in the Serenity Release. It's unclear at this point if there will any inflation with Serenity release, if there is it will be between 0% and 8% depending on what makes sense for the CASPER algorithm and the platform.",
+        "How many TPS does Ethereum support": "between 20 tps to 45 tps. possibly more."
+    }
+
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ethereum</title>
+    <!-- Logo is taken from https://cdn4.iconfinder.com/data/icons/modern-future-technology/128/crystal-ether-128.png -->
+    <link rel="icon" href="images/logo.png" sizes="16x16" type="image/png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript/scripts.js"></script>
+    <script src="javascript/game.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <!-- Nav logo. Taken from https://www.ethereum.org/images/logos/ETHEREUM-LOGO_LANDSCAPE_Black.png -->
+        <a><img height="50px" src="images/eth.png"></a>
+
+        <!-- Nav links -->
+        <a class="tab">Home</a>
+        <a class="tab">Investing</a>
+
+        <!--Dropdown menu-->
+        <div class="dropdown">
+            <a>How it works</a>
+            <div id="MenuDropdown" class="dropdown-content">
+                <a class="tab">Blockchain</a>
+                <a class="tab">Buying</a>
+                <a class="tab">FAQ</a>
+            </div>
+        </div>
+
+        <a class="tab">Game</a>
+
+    </nav>
+
+
+    <!-- Home Tab -->
+    <section id="Home" class="tabcontent">
+
+        <h1>What is Ethereum?</h1>
+        <!-- <h2> text taken from https://ethereum.org/ -->
+        <h2>Ethereum is a decentralized platform for applications that run exactly as programmed without any chance of fraud,
+            censorship or third-party interference.</h2>
+        <hr>
+
+
+        <h3>Created in 2017</h3>
+        <!-- <p> text taken from https://ethereum.org/ -->
+        <p>Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without
+            any possibility of downtime, censorship, fraud or third party interference. These apps run on a custom built
+            blockchain, an enormously powerful shared global infrastructure that can move value around and represent the
+            ownership of property. This enables developers to create markets, store registries of debts or promises, move
+            funds in accordance with instructions given long in the past (like a will or a futures contract) and many other
+            things that have not been invented yet, all without a middle man or counterparty risk. The project was bootstrapped
+            via an ether presale in August 2014 by fans all around the world. It is developed by the Ethereum Foundation,
+            a Swiss nonprofit, with contributions from great minds across the globe.</p>
+        <hr>
+
+
+        <h3>Ethereum Features</h3>
+        <button class="accordion">Ethereum Wallet</button>
+        <div class="accordianpanel">
+            <!-- <p> text taken from https://ethereum.org/ -->
+            <p>The Ethereum Wallet is a gateway to decentralized applications on the Ethereum blockchain. It allows you to hold
+                and secure ether and other crypto-assets built on Ethereum, as well as write, deploy and use smart contracts.
+            </p>
+        </div>
+
+        <button class="accordion">Server Architecture</button>
+        <div class="accordianpanel">
+            <!-- <p> text taken from https://www.bitmart.co.za/en/what-is-ethereum/ -->
+            <p>On traditional server architectures, every application has to set up its own servers that run their own code
+                in isolated silos, making sharing of data hard. If a single app is compromised or goes offline, many users
+                and other apps are affected. On a blockchain, anyone can set up a node that replicates the necessary data
+                for all nodes to reach an agreement and be compensated by users and app developers. This allows user data
+                to remain private and apps to be decentralized like the Internet was supposed to work.
+            </p>
+        </div>
+
+        <button class="accordion">Strong Development Team</button>
+        <div class="accordianpanel">
+            <!-- <p> text taken from https://vladimirribakov.com/invest-ethereum-buy-ethereum/ -->
+            <p>Vitalik Buterin, a programmer from Toronto, first grew interested in bitcoin in 2011. Buterin learned about Bitcoin
+                when he was 17, and soon after (in 2012) won the Bronze Medal at the International Olympiads in Informatics.
+                He co-founded the online news website Bitcoin Magazine in the same year, writing hundreds of articles on
+                the cryptocurrency world. He went on to code for the privacy-minded Dark Wallet and the marketplace Egora.
+                After Buterin unveiled the Ethereum white paper, other developers participated in the project. The team behind
+                Ethereum is very smart. I always look up the people that are behind a project before investing and Ethereum
+                has 100% of my confidence.
+            </p>
+        </div>
+        <hr>
+
+
+        <h3>A Strong Investment</h3>
+        <p>The main driving force behind Ethereum's new popularity is from the investment community. When the potential value
+            of Ethereum was discovered, investors began purchasing large quantitys of Ethereum driving the price up. Ethereum
+            is still an extremely sought after cryptocurrency with high investment potential. Have a look at the price chart
+            to view just how much Ethereum has risen in the past few years.</p>
+
+        <!-- Chart image taken from https://coinmarketcap.com/currencies/ethereum/#charts as printscreen -->
+        <img src="images/ethereumchart.jpg" width="90%">
+        <p class="img-caption">Chart provided by CoinMarketCap.</p>
+
+    </section>
+
+
+    <!-- Investing Tab -->
+    <section id="Investing" class="tabcontent">
+
+        <h1>Investing in Ethereum</h1>
+        <h2>Given the sudden rise in Ethereums value it's no wonder people are clammoring to invest in the cryptocurrency.</h2>
+        <hr>
+
+
+        <h3>A new venture</h3>
+        <!-- <p> text taken from https://www.investing.com/analysis/should-you-invest-in-ethereum-200181392 -->
+        <p>Ethereum is also alot more volatile than Bitcoin currently. However, this is probably as a result of its infancy
+            status. Traders are less capable of dealing with its gyrations as they have not had the opportunity to study
+            it over the long term. Many crptocurrency traders tend to rely on forex signals and even then the direction is
+            hard to judge. Hence, if you are a trader that is looking to make a quick profit on the volatile moves of Ether,
+            then it could be more difficult to give you clear guidance on the short term movements. However, from the perspective
+            of an investment decision, the allure of Ethereum cannot be ignored. Like those investors who buy gold as a store
+            of value, a crypto currency will serve the same purpose.</p>
+        <hr>
+
+
+        <h3>Ethereum versus Bitcoin</h3>
+        <p>What sets them apart? Watch this video to find out!</p>
+
+        <!-- Video is added in scripts.js using jQuery. Video is taken from https://www.youtube.com/watch?v=0UBk1e5qnr4 -->
+        <div id="VideoBox"></div>
+
+        <!-- Buttons for controlling the video -->
+        <div class="btn-group">
+            <button id="HideShowVideo">Show/Hide Video</button>
+            <button id="ChangeVideoSize">Small/Large Display</button>
+        </div>
+        <hr>
+
+
+        <h3>How much Ethereum exists?</h3>
+        <!-- #EthFacts is populated from a JSON using jQuery. Facts are taken from https://ethereum.org/ether -->
+        <ul id="EthFacts"></ul>
+        <hr>
+
+
+        <h3>Live Ethereum Price</h3>
+        <!-- #EthereumPrice displays the current GBP/USD price of ethereum. It gets it from an API which returns a json file. It is updated every five seconds.
+        API link: https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=GBP,USD -->
+        <p id="EthereumPrice"></p>
+        <p> The above ticker is the current price of Ethereum. You can also view recent prices in the below table. They are updated
+            every five seconds.</p>
+
+        <!-- #EthPriceTable is populated every five seconds with the a row containing the date/time and the GBP/USD price. Price info is taken from same API as #ethereumprice -->
+        <table id="EthPriceTable">
+            <tr>
+                <th>Date</th>
+                <th>GBP Price</th>
+                <th>USD Price</th>
+            </tr>
+        </table>
+
+    </section>
+
+
+    <!-- Technology TAB -->
+    <section id="Blockchain" class="tabcontent">
+
+        <h1> Ethereum Blockchain</h1>
+        <!-- The three <p> sections below are taken from https://www.coindesk.com/information/how-ethereum-works/ -->
+        <p>The structure of the ethereum blockchain is very similar to bitcoin's, in that it is a shared record of the entire
+            transaction history. Every node on the network stores a copy of this history. The big difference with ethereum
+            is that its nodes store the most recent state of each smart contract, in addition to all of the ether transactions.
+            (This is much more complicated than described, but the text below should help you get your feet wet.)</p>
+
+        <p>For each ethereum application, the network needs to keep track of the 'state', or the current information of all
+            of these applications, including each user's balance, all the smart contract code and where it's all stored.
+            Bitcoin uses unspent transaction outputs to track who has how much bitcoin. While it sounds more complex, the
+            idea is fairly simple. Every time a bitcoin transaction is made, the network 'breaks' the total amount as if
+            it was paper money, issuing back bitcoins in a way that makes the data behave similarly to physical coins or
+            change. </p>
+
+        <p>To make future transactions, the bitcoin network must add up all your pieces of change, which are classed as either
+            'spent' or 'unspent'. Ethereum, on the other hand, uses accounts. Like bank account funds, ether tokens appear
+            in a wallet, and can be ported (so to speak) to another account. Funds are always somewhere, yet don’t have what
+            you might call a continued relationship.</p>
+
+    </section>
+
+
+    <!-- Buying Tab -->
+    <section id="Buying" class="tabcontent">
+
+        <h1>How to buy</h1>
+        <!--The below <div> loads a list from JSON. Text in JSON was taken from http://www.investopedia.com/news/how-do-i-buy-ethereum/ -->
+        <ol id="HowToBuy"></ol>
+
+    </section>
+
+
+    <!-- FAQ Tab -->
+    <section id="FAQ" class="tabcontent">
+
+        <h1>FAQ's</h1>
+        <h2>Select an option below to view some of the most commonly asked questions about Ethereum.</h2>
+
+        <div class="select-box box">
+            <!-- The option values of the select box are populated from the key names in ethereumfaq.json. When an option is chosen scripts.js uses the key name to retrieve the corrosponding data. This data is then populated as a <ul><li> list in the #faqsection <div> -->
+            <select id="FAQSelect">
+                <option value="select">Select..</option>
+            </select>
+        </div>
+
+        <div id="FAQSection"></div>
+
+    </section>
+
+
+    <!-- Game Tab -->
+    <section id="Game" class="tabcontent">
+
+        <h1 id="GameTitle">The Ethereum Game</h1>
+        <h2>Get rich by catching Ethereum coins in your wallet! Use your mouse to move the wallet left and right. Catch 25 to
+            win!
+        </h2>
+
+        <!-- HTML5 canvas game -->
+        <canvas id="game" width="800" height="800">
+            <!-- wallet_img.png is taken from https://image.flaticon.com/icons/png/128/214/214362.png.
+            coin_img.png is taken from https://ethereum.org/images/logos/ETHEREUM-ICON_Black_small.png -->
+            <img id="wallet_img" src="images/wallet.png"> <img id="coin_img" src="images/coin.png">
+        </canvas>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Website created by Jack O'Hara for COM554 Interactive Web Computing.</p>
+    </footer>
+</body>
+
+</html>

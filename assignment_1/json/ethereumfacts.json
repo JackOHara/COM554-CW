@@ -1,0 +1,6 @@
+{
+    "factq": "60 million ether created to contributors of the presale.",
+    "fact2": "12 Million (20% of the above) were created to the development fund, most of it going to early contributors and developers and the remaining to the Ethereum Foundation.",
+    "fact3": "5 ethers are created every block (roughly 15 seconds) to the miner of the block",
+    "fact4": "2-3 ethers are sometimes sent to another miner if they were also able to find a solution but his block wasn't included (called uncle/aunt reward)"
+}
